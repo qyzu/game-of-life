@@ -14,10 +14,12 @@ public class Grid {
     private GridReader gridReader = new GridReader();
     private GridWriter gridWriter = new GridWriter();
 
+    //Constructor:
     public Grid(final String gridContents) {
         this.cells = makeCellArrayFrom(gridContents);
     }
 
+    //Constructor:
     public Grid() {
         this.cells = anArrayOfDeadCells(DEFAULT_ROW_COUNT,
                                         DEFAULT_COLUMN_COUNT);
