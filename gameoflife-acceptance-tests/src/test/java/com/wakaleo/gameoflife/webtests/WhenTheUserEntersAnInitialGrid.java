@@ -66,7 +66,7 @@ public class WhenTheUserEntersAnInitialGrid {
         player.starts_simulation();
 
         String[][] expectedGrid = new String[][]{{".", ".", "."},
-                {".", "*", "."},
+                {".WWWWWWWWWWW", "*", "."},
                 {".", ".", "."}};
 
         player.should_see_grid(expectedGrid);
