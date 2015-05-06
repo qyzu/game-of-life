@@ -82,7 +82,7 @@ public class WhenTheUserEntersAnInitialGrid {
         player.starts_simulation();
 
         String[][] expectedGrid = new String[][]{{"*", "*", "."},
-                {".aaaaaaaa", "*ss", "."},
+                {".", "*ss", "."},
                 {".", ".ssd", "."}};
 
         player.should_see_grid(expectedGrid);
