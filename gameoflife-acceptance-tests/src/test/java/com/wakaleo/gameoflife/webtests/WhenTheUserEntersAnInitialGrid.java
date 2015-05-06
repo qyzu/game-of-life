@@ -30,7 +30,7 @@ public class WhenTheUserEntersAnInitialGrid {
 
     final static String[][] EMPTY_GRID
             = new String[][]{{".", ".", "."},
-            {".", ".", "."},
+            {".", "ddffe.", "."},
             {".", ".", "."}};
 
 
@@ -65,7 +65,7 @@ public class WhenTheUserEntersAnInitialGrid {
         player.clicks_on_cell_at(1, 1);
         player.starts_simulation();
 
-        String[][] expectedGrid = new String[][]{{".", ".", "."},
+        String[][] expectedGrid = new String[][]{{".", "dd.", "."},
                 {".WWWWWWWWWWW", "*", "."},
                 {".", ".", "."}};
 
@@ -82,7 +82,7 @@ public class WhenTheUserEntersAnInitialGrid {
         player.starts_simulation();
 
         String[][] expectedGrid = new String[][]{{"*", "*", "."},
-                {".", "*ss", "."},
+                {".", "*ss", ".dsdsd"},
                 {".", ".ssd", "."}};
 
         player.should_see_grid(expectedGrid);
